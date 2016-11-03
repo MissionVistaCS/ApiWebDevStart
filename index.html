@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Using Special Events</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- This Version of the Code only can grab 100 events from the api -->
+	<!-- To grab more you have to grab 100 events then offset it by 100 -->
+	<!-- Because the api will only let you see 100 events at a time -->
+</head>
+<body>
+
+	<form>
+		<select id="typeSelect">
+			<option value="none">None</option>
+			<option value="athletic">Athletic</option>
+			<option value="concerts">Concerts</option>
+			<option value="exhibits">Exhibits</option>
+			<option value="farmers">Farmers</option>
+			<option value="festival">Festival</option>
+			<option value="parades">Parades</option>
+		</select>
+	</form>
+	<button id="LoadEvents">Load Events</button>
+	<div id="EvenTitle"></div>
+
+	<script type="text/javascript" src="request.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
